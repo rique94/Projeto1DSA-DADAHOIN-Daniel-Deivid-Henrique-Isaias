@@ -5,7 +5,7 @@ function mudar() {
     if (body.style.color == "black") {
         body.style.backgroundColor = "black";
         body.style.color = "white";
-        botao.innerText = "☀️"
+        botao.innerText = "☼"
     } else {
         body.style.backgroundColor = "white";
         body.style.color = "black";

@@ -1,7 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+    font-family: "Poppins";
 }
 :root {
     --numsei: white;
@@ -24,3 +25,4 @@ header {
     padding: 20px;
     font-size: 20pt;
 }
+
