@@ -1,6 +1,10 @@
 /* definindo as cores principais */
 :root {
     --azul-claro: #578cc8;
+    --azul-escuro: #26445a;
+    --azul-escuro-claro: #023774;
+    --azul-esverdeado: #3f6b85;
+    --marrom: #3c3333;
     --nenhuma-cor: rgba(0, 0, 0, 0);
 }
 /* Definindo as fontes principais */
@@ -37,7 +41,7 @@ h1 {
     font-size: 35pt;
     gap: 25px;
 }
-a {
+.aNav {
     color: #ffffff;
     text-decoration: none;
     font-size: 15pt;
@@ -45,7 +49,7 @@ a {
 
     transition: 0.3s;
 }
-a:hover {
+.aNav:hover {
     transition: 0.3s;
 
     font-size: 18pt;
@@ -53,32 +57,120 @@ a:hover {
     border-radius: 10px;
     padding: 10px;
 }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.imgLink {
+    background-color: var(--azul-escuro);
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    border-radius: 100%;
 
-img {
+    transition: 0.4s;
+}
+.imgLink:hover {
+    transition: 0.4s;
+
+    padding: 30px;
+    height: 130px;
+    width: 130px;
+
+    background-color: var(--azul-escuro-claro);
+}
+#iconHistoria {
     display: block;
     margin: auto;
     width: 80px;
     height: 80px;
 }
-article {
+#iconCultura {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 80px;
+}
+#iconCulinaria {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+#Historia {
     background-color: var(--azul-claro);
     padding: 20px;
+}
+#Cultura {
+    background-color: var(--azul-esverdeado);
+    width: 45vw;
+    padding: 50px;
+}
+#Culinaria {
+    background-color: var(--azul-escuro);
 }
 h2 {
     padding-bottom: 15px;
     text-align: center;
     font-style: italic;
     text-decoration: underline;
+    font-size: 20pt;
+}
+h3 {
+    text-align: center;
+    font-size: 18pt;
 }
 p {
    padding: 5px; 
+   padding-bottom: 60px;
    text-align: justify;
    margin: auto;
    max-width: 1200px;
+   font-size: 15pt;
 }
-
-#gradient {
+hr 
+{
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul-esverdeado);
+    flex-wrap: nowrap;
+}
+.box2 {
+    flex: 1;
+    min-width: 0;
+}
+.box2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#imgDiv {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+#gradient1 {
     height: 50px;
-    width: 100%;
     background-image: linear-gradient(var(--nenhuma-cor), var(--azul-claro));
+    width: 100%;
+}
+#gradient2 {
+    height: 50px;
+    background-image: linear-gradient(var(--azul-claro), var(--azul-esverdeado));
+    width: 100%;
+}
+#gradient3 {
+    height: 50px;
+    background-image: linear-gradient(var(--azul-esverdeado), var(--azul-escuro));
+    width: 100%;
 }
