@@ -22,9 +22,10 @@ body {
     /* Fazendo e ajustando o background */
     background-image: url("../../Img/Rio-de-Janeiro.png");
 
-    background-size: cover;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
+
     height: 100%;
     width: 100vw;
 
@@ -35,6 +36,7 @@ body {
 header {
     display: flex;
     margin: 15px;
+    margin-bottom: 40px;
     align-items: center;
     justify-content: space-between;
 }
@@ -63,6 +65,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    margin-bottom: 40px;
 }
 .imgLink {
     background-color: var(--azul-escuro);
@@ -70,6 +73,8 @@ h1 {
     height: 120px;
     padding: 20px;
     border-radius: 100%;
+    box-sizing: border-box;
+    object-fit: contain;
 
     transition: 0.4s;
 }
