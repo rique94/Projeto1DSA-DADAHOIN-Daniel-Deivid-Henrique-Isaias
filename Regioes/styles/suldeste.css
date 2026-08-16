@@ -2,9 +2,10 @@
 :root {
     --azul-claro: #578cc8;
     --azul-escuro: #26445a;
-    --azul-escuro-claro: #023774;
+    --azul-escuro-mais-azul: #023774;
     --azul-esverdeado: #3f6b85;
     --marrom: #3c3333;
+    --amarelo: #f2f1eb;
     --nenhuma-cor: rgba(0, 0, 0, 0);
 }
 /* Definindo as fontes principais */
@@ -85,7 +86,7 @@ h1 {
     height: 130px;
     width: 130px;
 
-    background-color: var(--azul-escuro-claro);
+    background-color: var(--azul-escuro-mais-azul);
 }
 #iconHistoria {
     display: block;
@@ -105,6 +106,12 @@ h1 {
     width: 150px;
     height: 150px;
 }
+#iconLendas {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
 #Historia {
     background-color: var(--azul-claro);
     padding: 20px;
@@ -117,6 +124,10 @@ h1 {
 #Culinaria {
     background-color: var(--azul-escuro);
 }
+#Lendas {
+    background-color: var(--amarelo);
+    color: black;
+}
 h2 {
     padding-bottom: 15px;
     text-align: center;
@@ -127,6 +138,7 @@ h2 {
 h3 {
     text-align: center;
     font-size: 18pt;
+    margin: 20px;
 }
 p {
    padding: 5px; 
@@ -141,7 +153,6 @@ hr
     color: white;
     margin-left: 40px;
     margin-right: 40px;
-    margin-bottom: 30px;
     height: 3px;
     border: none;
     background-color: white;
@@ -186,5 +197,10 @@ hr
 #gradient3 {
     height: 50px;
     background-image: linear-gradient(var(--azul-esverdeado), var(--azul-escuro));
+    width: 100%;
+}
+#gradient4{
+    background-image: linear-gradient(var(--azul-escuro), var(--amarelo));
+    height: 50px;
     width: 100%;
 }
