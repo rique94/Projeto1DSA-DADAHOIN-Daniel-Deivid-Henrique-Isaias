@@ -199,8 +199,18 @@ hr
     background-image: linear-gradient(var(--azul-esverdeado), var(--azul-escuro));
     width: 100%;
 }
-#gradient4{
+#gradient4 {
     background-image: linear-gradient(var(--azul-escuro), var(--amarelo));
     height: 50px;
     width: 100%;
+}
+#divLendas {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 700px;
+    border-radius: 30px;
+}
+#textoLendas {
+    padding-bottom: 0;
 }
