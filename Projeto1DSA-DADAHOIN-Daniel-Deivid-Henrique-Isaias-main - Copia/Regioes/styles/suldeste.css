@@ -1,0 +1,216 @@
+/* definindo as cores principais */
+:root {
+    --azul-claro: #578cc8;
+    --azul-escuro: #26445a;
+    --azul-escuro-mais-azul: #023774;
+    --azul-esverdeado: #3f6b85;
+    --marrom: #3c3333;
+    --amarelo: #f2f1eb;
+    --nenhuma-cor: rgba(0, 0, 0, 0);
+}
+/* Definindo as fontes principais */
+@font-face {
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins-Medium.ttf")
+}
+/* Definindo padding e Margin 0 padrão global */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+}
+body {
+    /* Fazendo e ajustando o background */
+    background-image: url("../../Img/Rio-de-Janeiro.png");
+
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    height: 100%;
+    width: 100vw;
+
+    color: #ffffff;
+}
+
+/* Deixando o header todo em cima */
+header {
+    display: flex;
+    margin: 15px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 35pt;
+    gap: 25px;
+}
+.aNav {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: 15px;
+
+    transition: 0.3s;
+}
+.aNav:hover {
+    transition: 0.3s;
+
+    font-size: 18pt;
+    background-color: var(--azul-claro);
+    border-radius: 10px;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+.imgLink {
+    background-color: var(--azul-escuro);
+    width: 120px;
+    height: 120px;
+    padding: 20px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    object-fit: contain;
+
+    transition: 0.4s;
+}
+.imgLink:hover {
+    transition: 0.4s;
+
+    padding: 30px;
+    height: 130px;
+    width: 130px;
+
+    background-color: var(--azul-escuro-mais-azul);
+}
+#iconHistoria {
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+}
+#iconCultura {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 80px;
+}
+#iconCulinaria {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+#iconLendas {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+#Historia {
+    background-color: var(--azul-claro);
+    padding: 20px;
+}
+#Cultura {
+    background-color: var(--azul-esverdeado);
+    width: 45vw;
+    padding: 50px;
+}
+#Culinaria {
+    background-color: var(--azul-escuro);
+}
+#Lendas {
+    background-color: var(--amarelo);
+    color: black;
+}
+h2 {
+    padding-bottom: 15px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 20pt;
+}
+h3 {
+    text-align: center;
+    font-size: 18pt;
+    margin: 20px;
+}
+p {
+   padding: 5px; 
+   padding-bottom: 60px;
+   text-align: justify;
+   margin: auto;
+   max-width: 1200px;
+   font-size: 15pt;
+}
+hr 
+{
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 3px;
+    border: none;
+    background-color: white;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul-esverdeado);
+    flex-wrap: nowrap;
+}
+.box2 {
+    flex: 1;
+    min-width: 0;
+}
+.box2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#imgDiv {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+.comidas {
+    display: block;
+    width: 50vw;
+    margin: auto;
+}
+#gradient1 {
+    height: 50px;
+    background-image: linear-gradient(var(--nenhuma-cor), var(--azul-claro));
+    width: 100%;
+}
+#gradient2 {
+    height: 50px;
+    background-image: linear-gradient(var(--azul-claro), var(--azul-esverdeado));
+    width: 100%;
+}
+#gradient3 {
+    height: 50px;
+    background-image: linear-gradient(var(--azul-esverdeado), var(--azul-escuro));
+    width: 100%;
+}
+#gradient4 {
+    background-image: linear-gradient(var(--azul-escuro), var(--amarelo));
+    height: 50px;
+    width: 100%;
+}
+#divLendas {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 700px;
+    border-radius: 30px;
+}
+#textoLendas {
+    padding-bottom: 0;
+}
