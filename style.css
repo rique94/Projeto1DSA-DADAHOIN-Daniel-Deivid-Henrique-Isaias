@@ -85,7 +85,8 @@ header {
     font-size: 50pt;
 }
 #h1-2 {
-    font-family: "Caveat";
+    font-family: "InstrumentSerif";
+    font-style: italic;
     font-size: 50pt;
 }
 #subtext {
@@ -190,8 +191,9 @@ main {
     background-size: cover;
 
     margin: 40px;
+    margin-left: 0px;
 
-    border-radius: 20px;
+    border-radius: 35px;
 
     width: 600px;
     height: 350px;
@@ -226,6 +228,21 @@ main {
     background-image:
         linear-gradient(transparent 40%, var(--preto-translucido) 100%),
         url("./Img/regiao-nordeste.png");
+}
+#centro-oeste {
+    background-image:
+        linear-gradient(transparent 40%, var(--preto-translucido) 100%),
+        url("./Img/regiao-centro-oeste.png");
+}
+#suldeste {
+    background-image:
+        linear-gradient(transparent 40%, var(--preto-translucido) 100%),
+        url("./Img/regiao-sudeste.png");
+}
+#sul {
+    background-image:
+        linear-gradient(transparent 40%, var(--preto-translucido) 100%),
+        url("./Img/regiao-sul.png");
 }
 footer {
     border-top: 2px solid var(--cor-border);
