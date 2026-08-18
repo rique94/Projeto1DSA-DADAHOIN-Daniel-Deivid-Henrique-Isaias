@@ -5,17 +5,17 @@
 /* Defininfo cores */
 :root {
     --agua: rgba(0, 0, 0, 0.038);
-    --transparente: rgba(0, 0, 0, 0,);
+    --transparente: rgba(0, 0, 0, 0);
     --preto-translucido: rgba(0, 0, 0, 0.8);
-    --verde: #185B37;
-    --cor-footer-secondary: #F2E7CE;
-    --cor-border: #DED3BB;
+    --verde: #185b37;
+    --cor-footer-secondary: #f2e7ce;
+    --cor-border: #ded3bb;
     --cor-background: #fbf6e6;
 }
 /*Definindo as fontes*/
 @font-face {
-  font-family: "Bricolage";
-  src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
+    font-family: "Bricolage";
+    src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
 }
 @font-face {
     font-family: "Caveat";
@@ -90,7 +90,7 @@ header {
 }
 #subtext {
     font-family: "WorkSans";
-    
+
     background-color: var(--agua);
     backdrop-filter: blur(10px);
 
@@ -111,7 +111,7 @@ header {
     color: white;
 
     padding: 10px;
-   
+
     border-radius: 100px;
 
     transition: 0.3s;
@@ -180,7 +180,12 @@ main {
 .container2 {
     display: flex;
 }
+.container2 a {
+    color: white;
+}
 .card {
+    position: relative;
+
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -193,16 +198,33 @@ main {
 
     color: white;
 }
+.textCard h3 {
+    font-family: "Bricolage";
+    font-size: 30pt;
+    top: auto;
+}
+.exampletextCard {
+    font-family: "InstrumentSerif";
+    font-style: italic;
+}
+.textCard {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.subtextCard {
+    font-family: "SpaceGrotesk";
+}
 #norte {
-    background-image: 
-        linear-gradient(transparent 40%, 
-            var(--preto-translucido) 100%), 
+    background-image:
+        linear-gradient(transparent 40%, var(--preto-translucido) 100%),
         url("./Img/regiao-norte.png");
 }
 #nordeste {
-    background-image: 
-        linear-gradient(transparent 40%, 
-            var(--preto-translucido ) 100%), 
+    background-image:
+        linear-gradient(transparent 40%, var(--preto-translucido) 100%),
         url("./Img/regiao-nordeste.png");
 }
 footer {
