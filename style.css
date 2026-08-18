@@ -1,31 +1,106 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: "Poppins";
+}
+/* Defininfo cores */
+:root {
+    --agua: rgba(0, 0, 0, 0.038);
+    --verde: #185B37;
+}
+/*Definindo as fontes*/
+@font-face {
+  font-family: "Bricolage";
+  src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
 }
 @font-face {
-    font-family: "Poppins";
-    src: url("./fonts/Poppins-Medium.ttf");
+    font-family: "Caveat";
+    src: url("./fonts/Caveat-VariableFont_wght.ttf");
 }
-:root {
-    --numsei: white;
+@font-face {
+    font-family: "WorkSans";
+    src: url("./fonts/WorkSans-VariableFont_wght.ttf");
 }
-nav {
-    text-align: right;
-}
-button {
-    width: 60px;
-    height: 40px;
-    font-size: 18pt;
-    background-color: rgb(0, 196, 0);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.292);
-}
-header {
-    background-color: green;
-    text-align: center;
-    padding: 20px;
-    font-size: 20pt;
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
+body {
+    background-image: url("./Img/hero-brasil.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+}
+header {
+    color: white;
+}
+#title {
+    color: white;
+    width: 480px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    margin-left: 90px;
+    margin-bottom: 120px;
+
+    display: block;
+}
+#subtitle {
+    margin: auto;
+    text-align: center;
+    width: 290px;
+
+    border-radius: 290px;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+
+    background-color: var(--agua);
+    backdrop-filter: blur(2px);
+
+    padding: 10px;
+
+    font-family: "WorkSans";
+}
+#h1-1 {
+    font-family: "Bricolage";
+    font-size: 50pt;
+}
+#h1-2 {
+    font-family: "Caveat";
+    font-size: 50pt;
+}
+#subtext {
+    font-family: "WorkSans";
+    
+    background-color: var(--agua);
+    backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+
+    padding: 10px;
+}
+#title div p {
+    margin-top: 20px;
+    font-family: "SpaceGrotesk";
+}
+#title div p a {
+    font-family: "WorkSans";
+    text-decoration: none;
+
+    background-color: var(--verde);
+    color: white;
+
+    padding: 10px;
+   
+    border-radius: 100px;
+
+    transition: 0.3s;
+}
+#title div p a:hover {
+    transition: 0.3s;
+    background-color: #1c673f;
+    padding: 15px;
+    font-size: 12pt;
+}
