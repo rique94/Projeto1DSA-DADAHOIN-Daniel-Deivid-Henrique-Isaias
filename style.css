@@ -199,6 +199,20 @@ main {
     height: 350px;
 
     color: white;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+.card:hover {
+    transition: 0.3s;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.17);
+}
+.card:hover .textCard {
+    transition: 0.3s;
+
+    margin-bottom: 50px;
 }
 .textCard h3 {
     font-family: "Bricolage";
@@ -215,6 +229,8 @@ main {
     position: absolute;
     margin-left: 30px;
     margin-bottom: 30px;
+
+    transition: 0.3s;
 }
 .subtextCard {
     font-family: "SpaceGrotesk";
@@ -223,6 +239,8 @@ main {
     background-image:
         linear-gradient(transparent 40%, var(--preto-translucido) 100%),
         url("./Img/regiao-norte.png");
+
+    transition: 0.3s;
 }
 #nordeste {
     background-image:
@@ -243,6 +261,26 @@ main {
     background-image:
         linear-gradient(transparent 40%, var(--preto-translucido) 100%),
         url("./Img/regiao-sul.png");
+}
+#back {
+    background-color: var(--cor-footer-secondary);
+    border: 1px solid  var(--cor-border);
+
+    font-family: "Bricolage";
+    font-size: 40pt;
+
+    text-decoration: none;
+    text-align: center;
+
+    color: var(--verde);
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#back h3 {
+    text-decoration: none;
+    
 }
 footer {
     border-top: 2px solid var(--cor-border);

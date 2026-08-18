@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*Definindo as fontes*/
+@font-face {
+    font-family: "Bricolage";
+    src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("./fonts/Caveat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url("./fonts/WorkSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSans";
+    src: url("./fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSerif";
+    src: url("./fonts/InstrumentSerif-Regular.ttf");
+}
+
+
+header {
+    background-image: url("../../Img/regiao-norte.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    min-height: 731px;
+
+    color: white;
+}
