@@ -5,7 +5,12 @@
 /* Defininfo cores */
 :root {
     --agua: rgba(0, 0, 0, 0.038);
+    --transparente: rgba(0, 0, 0, 0,);
+    --preto-translucido: rgba(0, 0, 0, 0.8);
     --verde: #185B37;
+    --cor-footer-secondary: #F2E7CE;
+    --cor-border: #DED3BB;
+    --cor-background: #fbf6e6;
 }
 /*Definindo as fontes*/
 @font-face {
@@ -24,21 +29,34 @@
     font-family: "SpaceGrotesk";
     src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
-
+@font-face {
+    font-family: "InstrumentSans";
+    src: url("./fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSerif";
+    src: url("./fonts/InstrumentSerif-Regular.ttf");
+}
 body {
-    background-image: url("./Img/hero-brasil.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100% auto;
+    background-color: var(--cor-background);
 }
 header {
     color: white;
+
+    background-image: url("./Img/hero-brasil.png");
+    min-height: 731px;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    position: relative;
 }
 #title {
     color: white;
     width: 480px;
 
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
 
@@ -103,4 +121,95 @@ header {
     background-color: #1c673f;
     padding: 15px;
     font-size: 12pt;
+}
+.container {
+    width: 1000px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    margin-bottom: 10px;
+
+    background-color: var(--agua);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.56);
+}
+.box {
+    display: flex;
+
+    height: 25px;
+}
+.box p {
+    width: 240px;
+    text-align: center;
+
+    margin: auto;
+}
+.nameregions {
+    font-family: "WorkSans";
+}
+.exampleregions {
+    font-family: "SpaceGrotesk";
+    color: rgb(157, 157, 157);
+}
+main p {
+    font-family: "InstrumentSerif";
+}
+h2 {
+    font-family: "Bricolage";
+    font-size: 35pt;
+}
+main {
+    margin: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 50px;
+
+    padding-bottom: 40px;
+}
+.containertext {
+    border-bottom: 2px solid var(--cor-border);
+    padding-bottom: 20px;
+}
+.container2 {
+    display: flex;
+}
+.card {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 40px;
+
+    border-radius: 20px;
+
+    width: 600px;
+    height: 350px;
+
+    color: white;
+}
+#norte {
+    background-image: 
+        linear-gradient(transparent 40%, 
+            var(--preto-translucido) 100%), 
+        url("./Img/regiao-norte.png");
+}
+#nordeste {
+    background-image: 
+        linear-gradient(transparent 40%, 
+            var(--preto-translucido ) 100%), 
+        url("./Img/regiao-nordeste.png");
+}
+footer {
+    border-top: 2px solid var(--cor-border);
+    padding: 30px;
+    background-color: var(--cor-footer-secondary);
+    font-family: "InstrumentSans";
+    color: var(--verde);
+    font-size: 18pt;
 }
