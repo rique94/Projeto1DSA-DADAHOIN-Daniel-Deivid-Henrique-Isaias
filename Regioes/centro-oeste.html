@@ -22,43 +22,39 @@
                         <p class="main-title">Estados em destaque</p>
                         <h2>2 recortes da região</h2>
                     </div>
-                    <p class="destaque-instruçoes">
-                        Escolha um estado e alterne entre lendas e comidas.
-                        Clique no Lápis em qualquer card para reescrever o conteúdo.
-                    </p>
                 </div>
 
                 <div class="divider"></div>
 
                 <div class="interface-estados">
-                    <button class="interface-estado active" data-estado="Mato-Grosso" data-capital="Cuiabá">
-                        Mato Grosso <span>· MT</span>
+                    <button class="interface-estado active" data-estado="Mato-Grosso" data-capital="Cuiabá" id="estado1" onclick="mudarEstado('matoGrosso')">
+                        Mato Grosso <span>● MT</span>
                     </button>
-                    <button class="interface-estado" data-estado="Goiás" data-capital="Goiânia">
-                        Goiás <span>· GO</span>
+                    <button class="interface-estado" data-estado="Goiás" data-capital="Goiânia" id="estado2" onclick="mudarEstado('goias')">
+                        Goiás <span>● GO</span>
                     </button>
                 </div>
 
-                <p class="linha-capital">
+                <p class="linha-capital" id="resEstado">
                     📍 Capital de <span id="capitalEstado">Mato Grosso</span>: <strong id="capitalNome">Cuiabá</strong>
                 </p>
 
                 <div class="interface-conteudo">
-                    <button class="interface-cont active" data-tipo="Lendas">✨ Lendas folclóricas</button>
-                    <button class="interface-cont" data-tipo="comidas">🍽️ Comidas típicas</button>
+                    <button class="interface-cont active" data-tipo="Lendas" id="lendas" onclick="mudarCard('lendas')">✨ Lendas folclóricas</button>
+                    <button class="interface-cont" data-tipo="comidas" id="comidas" onclick="mudarCard('comidas')">🍽️ Comidas típicas</button>
                 </div>
 
                 <article class="conteudo-card">
-                    <p class="card-label">Lenda 01</p>
-                    <h3></h3>
-                    <p class="card-frase"></p>
-                    <p class="card-texto"></p>
+                    <p class="card-label" id="card">Lenda 01</p>
+                    <h3 id="cardTitle">MINHOCÃO DO PANTANAL</h3>
+                    <p class="card-frase" id="cardSubtitle">A serpente que cava corixos.</p>
+                    <p class="card-texto" id="cardText">Dizem que abre caminhos de água ao se arrastar sob a terra, derrubando barrancos e mudando o curso dos rios na cheia</p>
                 </article>
 
                 <hr class="footer-divisor">
                 <div class="footer-nav">
                     <a href="../index.html" class="link-voltar">← Voltar ao atlas</a>
-                    <a href="./suldeste.html" class="btn-proxima">Próxima região: Sudeste →</a>
+                    <a href="./sudeste.html" class="btn-proxima">Próxima região: Sudeste →</a>
                 </div>
             </section>
         </main>
@@ -68,4 +64,5 @@
             <p class="footer-marca">Cerrado e Brasa · Terra Batida</p>
         </footer>
     </body>
+    <script src="./scripts/centro-oeste.js"></script>
 </html>

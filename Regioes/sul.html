@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sul</title>
+    <link rel="stylesheet" href="./styles/sul.css">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <a href="../index.html">← Voltar ao Atlas</a>
+            <h1>Sul</h1>
+            <p id="subtitle">Campos Largos, invernos longos e mesa demorada</p>
+            <p id="subtextTitle">Invernos frios, araucárias e uma tradição de fogo de chão que atravessa gerações de causos campeiros.</p>
+        </div>
+    </header>
+    <main>
+            <div id="containerText">
+                <p>ESTADOS EM DESTAQUE</p>
+                <h2>3 recortes da região</h2>
+            </div>
+            <div class="container">
+                <p id="estado1" onclick="mudarEstado('minasGerais')">Rio Grande do Sul ● RS</p>
+                <p id="estado2" onclick="mudarEstado('rioDeJaneiro')">Santa Catarina ● SC</p>
+                <p id="estado3" onclick="mudarEstado('saoPaulo')">Paraná ● PR</p>
+            </div>
+            <p id="resEstado">📍Capital de Rio Grande do Sul: <strong>Porto Alegre</strong></p>
+        </div>
+        <div class="container">
+            <div id="containerLendasComidas">
+                <p id="lendas" onclick="mudarCard('comidas')">✨ Lendas folclóricas</p>
+                <p id="comidas" onclick="mudarCard('lendas')">🍽️ Comidas típicas</p>
+            </div>
+        </div>
+        <article>
+            <div class="container2">
+                <div class="card">
+                    <div>
+                        <p id="lenda01">LENDA 01</p>
+                        <h3 id="lenda01Title">Boitatá</h3>
+                        <p id="lenda01Subtitle">A cobra de fogo que guarda o campo.</p>
+                        <p id="lenda01Text">Serpente feita de fogo que persegue quem queima o mato sem necessidade. Seus olhos enormes enxergam no escuro absoluto</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="container3">
+            <a href="../index.html">← Voltar ao Atlas</a>
+            <a href="./norte.html" id="nextRegion">Próxima região: Norte</a>
+        </div>
+    </main>
+    <footer>
+        <p>RAIZES DO BRASIL - SUL</p>
+        <p id="textfooter">Pampa frio ● vinho e mate</p>
+    </footer>
+</body>
+</html>

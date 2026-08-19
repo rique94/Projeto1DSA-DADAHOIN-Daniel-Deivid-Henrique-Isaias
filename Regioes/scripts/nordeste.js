@@ -1,6 +1,5 @@
 //declarando cores e nomes e elementos
 //elementos
-let cardComidas = true
 let card = document.getElementById("card")
 let cardTitle = document.getElementById("cardTitle")
 let cardSubtitle = document.getElementById("cardSubtitle")
