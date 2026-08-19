@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bricolage";
+    src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("../../fonts/Caveat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url("../../fonts/WorkSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSans";
+    src: url("../../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSerif";
+    src: url("../../fonts/InstrumentSerif-Regular.ttf");
+}
+@font-face {
+   font-family: "bebas-neue";
+   src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%),
+    url('../../Img/regiao-centro-oeste.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 960px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    
+}

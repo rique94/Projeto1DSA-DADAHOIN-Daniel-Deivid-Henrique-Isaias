@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Região Centro-Oeste</title>
+        <link rel="stylesheet" href="../styles/centro-oeste.css">
+        <link rel="icon" type="image/png" href="../Img/regiao-centro-oeste.png" />
+    </head>
+    <body>
+        <header id="header">
+            <div id="title">
+                <h1>Centro-Oeste</h1>
+                <h2>Pantanal, campo aberto e comida de fogo lento.</h2>
+                <p id="subtxtitle">Terra de céu largo, peixes de água doce, pequi e histórias de boiadeiro que atravessam a noite.</p>
+            </div>
+        </header>
+        <main>
+            <section id="destaques">
+                <div class="destaque-head">
+                    <div>
+                        <p class="main-title">Estados em destaque</p>
+                        <h2>2 recortes da região</h2>
+                    </div>
+                    <p class="destaque-instruçoes">
+                        Escolha um estado e alterne entre lendas e comidas.
+                        Clique no Lápis em qualquer card para reescrever o conteúdo.
+                    </p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="interface-estados">
+                    <button class="interface-estados active" data-estado="Mato-Grosso" data-capital="Cuiabá">
+                        Mato Grosso <span>· MT</span>
+                    </button>
+                    <button class="interface-estado" data-estado="Goiás" data-capital="Goiânia">
+                        Goiás <span>· GO</span>
+                    </button>
+                </div>
+
+                <p class="linha-capital">
+                    📍 Capital de <span id="capitalEstado">Mato Grosso</span>: <strong id="capitalNome">Cuiabá</strong>
+                </p>
+
+                <div class="interface-conteudo">
+                    <button class="interface-cont active" data-tipo="Lendas">✨ Lendas folclóricas</button>
+                    <button class="interface-cont" data-tipo="comidas">🍽️ Comidas típicas</button>
+                </div>
+
+                <article class="conteudo-card">
+                    <p class="card-label">Lenda 01</p>
+                    <h3></h3>
+                    <p class="card-frase"></p>
+                    <p class="card-texto"></p>
+                </article>
+
+                <hr class="footer-divisor">
+                <div class="footer-nav">
+                    <a href="../index.html" class="link-voltar">← Voltar ao atlas</a>
+                    <a href="../Regioes/sudeste.html" class="btn-proxima">Próxima região: Sudeste →</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="footer-marca">Raízes do Brasil · Centro-Oeste</p>
+            <p class="footer-marca">Cerrado e Brasa · Terra Batida</p>
+        </footer>
+    </body>
+</html>

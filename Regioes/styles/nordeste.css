@@ -136,11 +136,21 @@ h2 {
     background: #ecd6a6;
     color: #6b4a26;
     cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    
+}
+
+.interface-estados:hover {
+    background: #e0c48a;
+    transform: translateY(-2px);
+    border: 0.5px solid #f1704f60;
+    
 }
 
 .interface-estados.active {
     background: #c1401f;
-    color: #fbf1dc;
+    color: #fbdedc;
+    
 }
 
 .linha-capital {
@@ -169,6 +179,11 @@ h2 {
     background: transparent;
     color: #6b4a26;
     cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interface-cont:hover {
+    background: rgba(251, 241, 220, 0.5);
 }
 
 .interface-cont.active {  
@@ -185,6 +200,12 @@ h2 {
     max-width: 560px;
     position: relative;
     overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.conteudo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(44, 27, 15, 0.12);
 }
 
 .card-label {
@@ -233,6 +254,12 @@ h2 {
     font-size: 0.9rem;
     color: #4a3527;
     text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.link-voltar:hover {
+    color: #c1401f;
+    transform: translateY(-2px);
 }
 
 .btn-proxima {
@@ -244,6 +271,14 @@ h2 {
     padding: 14px 22px;
     border-radius: 999px;
     text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(44, 27, 15, 0.1);
+}
+
+.btn-proxima:hover {
+    background: #a82f17;
+    transform: translateY(-2px);
+    
 }
 
 footer {
