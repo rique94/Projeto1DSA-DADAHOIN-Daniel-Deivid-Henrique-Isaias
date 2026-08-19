@@ -37,6 +37,11 @@
     src: url("../../fonts/Rubik-VariableFont_wght.ttf");
 }
 
+body {
+    background-color: #fbeedd;
+
+}
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 100%),
     url('../../Img/regiao-centro-oeste.png');
@@ -256,6 +261,11 @@ header {
     font-size: 0.9rem;
     color: #5c4423;
     text-decoration: none;
+    transform: transform 0.2s ease, color 0.2s ease;
+}
+.link-voltar:hover{
+    color: #b9741f;
+    transform: translateY(-2px);
 }
 
 .btn-proxima {
@@ -267,6 +277,12 @@ header {
     padding: 14px 22px;
     border-radius: 999px;
     text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(44, 27, 15, 0.1);
+}
+.btn-proxima:hover {
+    background: #995f19;
+    transform: translateY(-2px);
 }
 
 /*Footer da página*/
