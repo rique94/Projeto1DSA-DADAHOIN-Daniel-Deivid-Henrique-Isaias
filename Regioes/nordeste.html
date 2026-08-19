@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Região Nordeste</title>
+        <link rel="stylesheet" href="styles/nordeste.css">
+        <link rel="icon" type="image/png" href="../Img/regiao-nordeste.png" />
+    </head>
+    <body>
+        <header id="header">
+            <div id="title">
+                <h1>Nordeste</h1>
+                <h2>Sertão, dendê e cordel-o Nordeste fala alto.</h2>
+                
+                <p id="subtexttile">Nove estados de litoral, agreste e sertão, com a cozinha mais mestiça do pais e um repertório inesgotável de causo</p>
+            </div>
+        </header>
+    
+        <main>
+            <section id="destaques">
+                <div class="destaque-head">
+                    <div>
+                        <p class="main-title">Estados em destaque</p>
+                        <h2>3 recortes da região</h2>
+                    </div>
+                    <p class="destaque-instruçoes">
+                        Escolja um estado e alterne entre lendas e comidas.
+                        Clique no Lápis em qualaquer cartão para reescrever o conteúdo. 
+                    </p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="interface-estados">
+                    <button class="interface-estados active" data-estado="Bahia" data-capital="Salvador">
+                        Bahia <span>. BA</span>
+                    </button>
+                    <button class="interface-estados" data-estado="Pernambuco" data-capital="Recife">
+                        Pernambuco <span>. PE</span>
+                    </button>
+                    <button class="interface-estados" data-estado="Ceará" data-capital="Fortaleza">
+                        Ceará <span>. CE</span>
+                    </button>                   
+                </div>
+
+                <p class="linha-capital">
+                    📍 Capital de <span id="capitalEstado">Bahia</span>: <strong id="capitalNome">Salvador</strong>
+                </p>
+
+                <div class="interface-conteudo">
+                    <button class="interface-cont active" data-tipo="lendas">✨ Lendas Folclóricas</button>
+                    <button class="interface-cont" data-tipo="comidas">🍽️ Comidas Típicas</button>
+                </div>
+
+                <article class="conteudo-card">
+                    <p class="card-label">Lenda 01</p>
+                    <h3>Caipora</h3>
+                    <p class="card-frase">Guardião da mata montado em porco-do-mato.</p>
+                    <p class="card-texto">
+                        Protege os animais e confunde caçadores gulosos, apagando trilhas.
+                        Aceita fumo deixado num toco como oferenda de trégua.
+                    </p>
+                </article>
+
+                <hr class="footer-divisor">
+
+                <div class="footer-nav">
+                    <a href="../index.html" class="link-voltar">← Voltar ao atlas</a>
+                    <a href="../Regioes/centro-oeste.html" class="btn-proxima">Próxima região: Centro-Oeste</a>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p class="footer-marca">Raízes do Brasil · Nordeste</p>
+            <p class="footer-tag">Sol a pino · cartaz de feira</p>
+        </footer>
+    </body>
+</html>
