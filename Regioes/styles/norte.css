@@ -2,41 +2,336 @@
     margin: 0px;
     padding: 0px;
 }
+/* Defininfo cores */
+:root {
+    --transparente: rgba(0, 0, 0, 0);
+    --agua: rgba(49, 49, 49, 0.279);
+    --border-white: rgba(126, 126, 126, 0.488);
+    --background: #001a0f;
+    --foreground: #e8f3de;
+    --border: #254b3d;
+    --primary: #6fda75;
+    --primary-foreground: #00180c;
+    --secondary: #0d362a;
+    --card: #01291d;
+    --foreground-secondary: #6fda75;
+}
 /*Definindo as fontes*/
 @font-face {
     font-family: "Bricolage";
-    src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
-}
-@font-face {
-    font-family: "Caveat";
-    src: url("./fonts/Caveat-VariableFont_wght.ttf");
+    src: url("../../fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
 }
 @font-face {
     font-family: "WorkSans";
-    src: url("./fonts/WorkSans-VariableFont_wght.ttf");
+    src: url("../../fonts/WorkSans-VariableFont_wght.ttf");
 }
 @font-face {
     font-family: "SpaceGrotesk";
-    src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf");
+    src: url("../../fonts/SpaceGrotesk-VariableFont_wght.ttf");
 }
 @font-face {
     font-family: "InstrumentSans";
-    src: url("./fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
+    src: url("../../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
 }
 @font-face {
     font-family: "InstrumentSerif";
-    src: url("./fonts/InstrumentSerif-Regular.ttf");
+    src: url("../../fonts/InstrumentSerif-Regular.ttf");
+}
+@font-face {
+    font-family: "Playfair";
+    src: url("../../fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Fraunces";
+    src: url("../../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
 }
 
-
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
 header {
-    background-image: url("../../Img/regiao-norte.png");
+    background-image:
+        linear-gradient(var(--transparente), rgba(0, 0, 0, 0.652)),
+        url("../../Img/regiao-norte.jpg");
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: top center;
 
-    min-height: 731px;
+    height: 731px;
 
     color: white;
+
+    position: relative;
+}
+#title {
+    position: absolute;
+
+    display: block;
+
+    bottom: 0;
+    left: 0;
+
+    margin-left: 50px;
+    margin-bottom: 100px;
+
+    width: 500px;
+}
+#title a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 15pt;
+
+    margin: 20px;
+    text-align: center;
+
+    background-color: var(--agua);
+    backdrop-filter: blur(10px);
+
+    padding: 10px;
+
+    border-radius: 30px;
+
+    border: 1px solid var(--border-white);
+
+    transition: 0.3s;
+}
+#title a:hover {
+    transition: 0.3s;
+
+    font-size: 18pt;
+    box-shadow: 0px 0px 0px white;
+}
+h1 {
+    font-family: "Bricolage";
+    font-size: 50pt;
+}
+#subtitle {
+    font-family: "InstrumentSerif";
+    font-size: 20pt;
+
+    margin-bottom: 20px;
+}
+#subtextTitle {
+    font-family: "WorkSans";
+}
+
+main {
+    margin: 80px;
+}
+#containerText {
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid var(--border);
+}
+#containerText p {
+    font-family: "WorkSans";
+}
+#containerText h2 {
+    font-size: 30pt;
+    margin-top: 20px;
+
+    font-family: "Fraunces";
+}
+
+.container {
+    display: flex;
+}
+#estado1 {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+
+    padding: 10px;
+
+    border-radius: 30px;
+
+    margin: 10px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    font-family: "WorkSans";
+
+    transition: 0.3s;
+}
+#estado1:hover {
+    transition: 0.3s;
+
+    padding: 15px;
+
+    cursor: pointer;
+}
+#estado2 {
+    background-color: var(--secondary);
+    color: var(--foreground);
+
+    padding: 10px;
+
+    border-radius: 30px;
+
+    margin: 10px;
+
+    font-family: "WorkSans";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+#estado2:hover {
+    transition: 0.3s;
+
+    padding: 15px;
+
+    cursor: pointer;
+}
+#resEstado {
+    font-family: "WorkSans";
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.container div {
+    display: flex;
+
+    background-color: var(--secondary);
+
+    padding: 5px;
+    margin-top: 20px;
+
+    border-radius: 40px;
+}
+#lendas {
+    background-color: var(--background);
+    color: var(--foreground);
+
+    font-family: "WorkSans";
+
+    padding: 10px;
+    margin-right: 5px;
+
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+#lendas:hover {
+    transition: 0.3s;
+
+    padding: 15px;
+    cursor: pointer;
+}
+#comidas {
+    background-color: var(--secondary);
+    color: var(--foreground);
+
+    font-family: "WorkSans";
+
+    padding: 10px;
+    margin-left: 5px;
+
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+#comidas:hover {
+    transition: 0.3s;
+
+    padding: 15px;
+    cursor: pointer;
+}
+.container2 {
+    display: flex;
+}
+.card {
+    display: block;
+
+    border: 1px solid var(--secondary);
+    background-color: var(--card);
+
+    border-radius: 20px;
+
+    width: 400px;
+
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card div {
+    margin: 30px;
+}
+#prato1, #prato2 {
+    font-family: "Playfair";
+    display: block;
+
+    margin-bottom: 10px;
+}
+#prato2Title, #prato1Title {
+    font-family: "Fraunces";
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+#prato2Subtitle, #prato1Subtitle {
+    font-family: "InstrumentSerif";
+    font-style: italic;
+    color: var(--foreground-secondary);
+    margin-bottom: 10px;
+}
+#prato2Text, #prato1Text {
+    font-family: "WorkSans";
+}
+article {
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--border);
+}
+.container3 {
+    display: flex;
+    justify-content: space-between;
+}
+.container3 a {
+    font-family: "WorkSans";
+    text-decoration: none;
+    color: var(--foreground);
+    margin: 30px;
+
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container3 a:hover {
+    transition: 0.3s;
+
+    font-size: 15pt;
+    cursor: pointer;
+}
+.container3 #nextRegion {
+    background-color: var(--primary);
+    color: var(--primary-foreground); 
+    padding: 10px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--card);
+    border-top: 1px solid var(--border);
+    padding: 60px;
+
+    font-family: "Playfair";
 }

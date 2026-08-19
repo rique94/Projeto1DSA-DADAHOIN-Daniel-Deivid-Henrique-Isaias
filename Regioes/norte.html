@@ -10,16 +10,57 @@
 <body>
     <header id="header">
         <div id="title">
+            <a href="../index.html">← Voltar ao Atlas</a>
             <h1>Norte</h1>
             <p id="subtitle">Onde o rio é a estrada e a mata guarda os encantados</p>
-            <p id="subtexttile">A maior região do pais onde a amazônia dita o ritmo de vida, a mesa e as história contadas a beira d'água</p>
+            <p id="subtextTitle">A maior região do pais onde a amazônia dita o ritmo de vida, a mesa e as história contadas a beira d'água</p>
         </div>
     </header>
     <main>
-
+        <div>
+            <div id="containerText">
+                <p>ESTADOS EM DESTAQUE</p>
+                <h2>2 recortes da região</h2>
+            </div>
+            <div class="container">
+                <p id="estado1" onclick="mudarEstado('amazonas')">Amazonas - AM</p>
+                <p id="estado2" onclick="mudarEstado('para')">Pará - PA</p>
+            </div>
+            <p id="resEstado">📍Capital de Amazonas: <strong>Manaus</strong></p>
+        </div>
+        <div class="container">
+            <div id="containerLendasComidas">
+                <p id="lendas" onclick="mudarCard('lendas')">Comidas típicas</p>
+                <p id="comidas" onclick="mudarCard('comidas')">Lendas folclóricas</p>
+            </div>
+        </div>
+        <article>
+            <div class="container2">
+                <div class="card">
+                    <div>
+                        <p id="prato1">PRATO 01</p>
+                        <h3 id="prato1Title">Tacacá</h3>
+                        <p id="prato1Subtitle">Tucupi quente, jambu, camarão seco e goma.</p>
+                        <p id="prato1Text">Servido fervendo na cuia, o tacacá combina o azedo do tucupi com o formigamento do jambu. Comida de fim de tarde vendidade em tacacázeiras nas esquinas</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <p id="prato2">PRATO 02</p>
+                        <h3 id="prato2Title">Pirarucu de casaca</h3>
+                        <p id="prato2Subtitle">Camadas de pirarucu, banana e farofa.</p>
+                        <p id="prato2Text">Prato de festa montado em camadas: pirarucu desfiado, banane-pacovã frita, purê e farofa de farinha d'água, gratinado até dourar.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="container3">
+            <a href="../index.html">← Voltar ao Atlas</a>
+            <a href="./nordeste.html" id="nextRegion">Próxima região: Nordeste</a>
+        </div>
     </main>
     <footer>
-
+        <p>RAIZES DO BRASIL - NORTE</p>
     </footer>
 </body>
 </html>
