@@ -33,32 +33,32 @@
                 <div class="divider"></div>
 
                 <div class="interface-estados">
-                    <button class="interface-estados active" data-estado="Bahia" data-capital="Salvador">
+                    <button class="interface-estados active" data-estado="Bahia" data-capital="Salvador" id="estado1"  onclick="mudarEstado('bahia')">
                         Bahia <span>· BA</span>
                     </button>
-                    <button class="interface-estados" data-estado="Pernambuco" data-capital="Recife">
+                    <button class="interface-estados" data-estado="Pernambuco" data-capital="Recife" id="estado2" onclick="mudarEstado('pernambuco')">
                         Pernambuco <span>· PE</span>
                     </button>
-                    <button class="interface-estados" data-estado="Ceará" data-capital="Fortaleza">
+                    <button class="interface-estados" data-estado="Ceará" data-capital="Fortaleza" id="estado3" onclick="mudarEstado('ceara')">
                         Ceará <span>· CE</span>
                     </button>                   
                 </div>
 
-                <p class="linha-capital">
+                <p class="linha-capital" id="resEstado">
                     📍 Capital de <span id="capitalEstado">Bahia</span>: <strong id="capitalNome">Salvador</strong>
                 </p>
 
                 <div class="interface-conteudo">
-                    <button class="interface-cont active" data-tipo="lendas">✨ Lendas Folclóricas</button>
-                    <button class="interface-cont" data-tipo="comidas">🍽️ Comidas Típicas</button>
+                    <button class="interface-cont active" data-tipo="lendas" id="lendas" onclick="mudarCard('lendas')">✨ Lendas Folclóricas</button>
+                    <button class="interface-cont" data-tipo="comidas" id="comidas" onclick="mudarCard('comidas')">🍽️ Comidas Típicas</button>
                 </div>
 
                 <article class="conteudo-card">
-                    <p class="card-label">Lenda 01</p>
-                    <h3>Caipora</h3>
-                    <p class="card-frase">Guardião da mata montado em porco-do-mato.</p>
-                    <p class="card-texto">
-                        Protege os animais e confunde caçadores gulosos, apagando trilhas.
+                    <p class="card-label" id="card">Lenda 01</p>
+                    <h3 id="cardTitle">Caipora</h3>
+                    <p class="card-frase" id="cardSubtitle">Guardião da mata montado em porco-do-mato.</p>
+                    <p class="card-texto" id="cardText">
+                        Protege os animais e confunde caçadores, apagando trilhas.
                         Aceita fumo deixado num toco como oferenda de trégua.
                     </p>
                 </article>
@@ -77,4 +77,5 @@
             <p class="footer-tag">Sol a pino · cartaz de feira</p>
         </footer>
     </body>
+    <script src="./scripts/nordeste.js"></script>
 </html>

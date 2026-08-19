@@ -34,7 +34,7 @@ function mudarEstado(estado) {
         estado1IsTrue = true
         estado2IsTrue = false
 
-        resEtado.innerText = "📍Capital de Amazonas: Manaus"
+        resEtado.innerHTML = "📍Capital de Amazonas: <strong>Manaus</strong>"
 
         //mudando o card
         if (comidasIsTrue){
@@ -53,7 +53,7 @@ function mudarEstado(estado) {
         estado2IsTrue = true
         estado1IsTrue = false
         
-        resEtado.innerText = "📍Capital do Pará: Belém"
+        resEtado.innerHTML = "📍Capital do Pará: <strong>Belém</strong>"
 
         //mudando card
         if (comidasIsTrue){

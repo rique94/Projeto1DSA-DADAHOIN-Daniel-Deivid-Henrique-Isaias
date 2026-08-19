@@ -38,7 +38,7 @@
 }
 
 header {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%),
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.652), rgba(0, 0, 0, 0) 100%),
     url('../../Img/regiao-nordeste.png');
     background-size: cover;
     background-position: center;
@@ -158,6 +158,8 @@ h2 {
     font-size: 0.9rem;
     color: #4a3527;
     margin-bottom: 24px;
+    margin-top: 24px;
+    font-size: 13pt;
 }
 
 .interface-conteudo {
@@ -189,7 +191,6 @@ h2 {
 .interface-cont.active {  
     background: #fbf1dc;
     color:#2c1b0f;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .conteudo-card {
