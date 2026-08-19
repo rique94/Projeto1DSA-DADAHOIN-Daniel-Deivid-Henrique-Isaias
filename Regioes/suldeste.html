@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suldeste</title>
+    <link rel="stylesheet" href="./styles/suldeste.css">
 </head>
 <body>
     <header>
@@ -15,10 +16,50 @@
         </div>
     </header>
     <main>
-
+            <div id="containerText">
+                <p>ESTADOS EM DESTAQUE</p>
+                <h2>3 recortes da região</h2>
+            </div>
+            <div class="container">
+                <p id="estado1" onclick="mudarEstado('minasGerais')">Minas Gerais - MG</p>
+                <p id="estado2" onclick="mudarEstado('rioDeJaneiro')">Rio de Janeiro - RJ</p>
+                <p id="estado3" onclick="mudarEstado('saoPaulo')">São Paulo - SP</p>
+            </div>
+            <p id="resEstado">📍Capital de Minas Gerais: <strong>Belo Horizonte</strong></p>
+        </div>
+        <div class="container">
+            <div id="containerLendasComidas">
+                <p id="lendas" onclick="mudarCard('comidas')">✨ Lendas folclóricas</p>
+                <p id="comidas" onclick="mudarCard('lendas')">🍽️ Comidas típicas</p>
+            </div>
+        </div>
+        <article>
+            <div class="container2">
+                <div class="card">
+                    <div>
+                        <p id="lenda01">LENDA 01</p>
+                        <h3 id="lenda01Title">Mula sem cabeça</h3>
+                        <p id="lenda01Subtitle">Fogo no lugar da cabeça, correndo o arraial.</p>
+                        <p id="lenda01Text">Mulher amaldiçoada por desrespeitar o sagrado, transformada em mula que solta fogo pelo pescoço nas noites de quinta para sexta.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <p id="lenda02">LENDA 02</p>
+                        <h3 id="lenda02Title">Saci-pererê</h3>
+                        <p id="lenda02Subtitle">Uma perna, gorro vermelho e redemoinho.</p>
+                        <p id="lenda02Text">Viaja em redemoinhos, embaraça crina de cavalo e esconde objetos. Aprisiona-se dentro de uma garrafa fechada com rolha de bento</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="container3">
+            <a href="../index.html">← Voltar ao Atlas</a>
+            <a href="./nordeste.html" id="nextRegion">Próxima região: Nordeste</a>
+        </div>
     </main>
     <footer>
-
+        <p>RAIZES DO BRASIL - SUDESTE</p>
     </footer>
 </body>
 </html>
