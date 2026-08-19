@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Definindo as fontes*/
+@font-face {
+    font-family: "Bricolage";
+    src: url("fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght\ \(1\).ttf");
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("../../fonts/Caveat-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url("../../fonts/WorkSans-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../../fonts/SpaceGrotesk-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSans";
+    src: url("../../fonts/InstrumentSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: "InstrumentSerif";
+    src: url("../../fonts/InstrumentSerif-Regular.ttf");
+}
+@font-face {
+   font-family: "bebas-neue";
+   src: url("../../fonts/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%),
+    url('../../Img/regiao-nordeste.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 960px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    
+}
+h2 {
+    margin-bottom: 16px;
+}
+
+#title {
+    max-width: 700px;
+    color: #fbf1dc;  
+}
+
+#title h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 5rem;
+    transform: uppercase;
+    line-height: 0.95;   
+    margin-bottom: 8px;
+}
+
+#subtitle {
+    font-family: "InstrumentSerif";
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+#subtexttile {
+    font-family: "WorkSans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+#destaques {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 64px 40px;
+}
+
+.destaque-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.main-title {
+    font-family: "instrumentSans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6b4a26;
+    margin-bottom: top;
+}
+
+.destaque-head h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #2c1b0f
+}
+
+.destaque-instruçoes {
+    font-family: "WorkSans", sans-serif;
+    max-width: 340px;
+    font-size: 0.95rem;
+    color: #4a3527
+}
+
+.divider {
+    height: 3px;
+    background: #c1401f;
+    margin: 28px 0 22px;
+}
+
+.interface-estados {
+    font-family: "WorkSans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ecd6a6;
+    color: #6b4a26;
+    cursor: pointer;
+}
+
+.interface-estados.active {
+    background: #c1401f;
+    color: #fbf1dc;
+}
+
+.linha-capital {
+    font-family: "WorkSans", sans-serif;
+    font-size: 0.9rem;
+    color: #4a3527;
+    margin-bottom: 24px;
+}
+
+.interface-conteudo {
+    display: inline-flex;
+    gap: 4px;
+    background: #f2e2bb;
+    padding: 6px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.interface-cont {
+    font-family: "WorkSans", sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #6b4a26;
+    cursor: pointer;
+}
+
+.interface-cont.active {  
+    background: #fbf1dc;
+    color:#2c1b0f;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-card {
+    background: #fbf1dc;
+    border: 1px solid #e8d6ac;
+    border-radius: 16px;
+    padding: 28px;
+    max-width: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-label {
+    font-family: "instrumentSans", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #a8825a;
+    margin-bottom: 6px;
+}
+
+.conteudo-card h3 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.card-frase {
+    font-family: "InstrumentSerif", sans-serif;
+    font-style:italic;
+    color: #c1401f;
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+}
+
+.card-texto {
+    font-family: "WorkSans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #4a3527;
+}
+.footer-divisor {
+    border: none;
+    border-top: 1px solid #e8d6ac;
+    margin: 40px 0 24px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-voltar {
+    font-family: "WorkSans", sans-serif;
+    font-size: 0.9rem;
+    color: #4a3527;
+    text-decoration: none;
+}
+
+.btn-proxima {
+    font-family: "WorkSans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;   
+    background: #c1401f;
+    color: #fbf1dc;
+    padding: 14px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background: #f2e2bb;
+}
+
+.footer-marca {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2c1b0f;
+}
+
+.footer-tag {
+    font-family: "WorkSans", sans-serif;
+    font-size: 0.85rem;
+    color: #6b4a26;
+}
