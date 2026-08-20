@@ -1,14 +1,14 @@
 //declarando cores e nomes e elementos
 //elementos
-let card1 = document.getElementById("prato1")
-let card1Title = document.getElementById("prato1Title")
-let card1Subtitle = document.getElementById("prato1Subtitle")
-let card1Text = document.getElementById("prato1Text")
+let card1 = document.getElementById("lenda01")
+let card1Title = document.getElementById("lenda01Title")
+let card1Subtitle = document.getElementById("lenda01Subtitle")
+let card1Text = document.getElementById("lenda01Text")
 
-let card2 = document.getElementById("prato2")
-let card2Title = document.getElementById("prato2Title")
-let card2Subtitle = document.getElementById("prato2Subtitle")
-let card2Text = document.getElementById("prato2Text")
+let card2 = document.getElementById("lenda02")
+let card2Title = document.getElementById("lenda02Title")
+let card2Subtitle = document.getElementById("lenda02Subtitle")
+let card2Text = document.getElementById("lenda02Text")
 
 let estado1 = document.getElementById("estado1")
 let estado1IsTrue = true
@@ -58,7 +58,7 @@ function mudarEstado(estado) {
         estado3.style.backgroundColor = "#25262d"
         estado3.style.color = "#f1f1f5"
 
-        estado2IsTrue = false
+        estado1IsTrue = false
         estado2IsTrue = true
         estado3IsTrue = false
         
@@ -101,10 +101,10 @@ function mudarEstado(estado) {
 function mudarCard(escolha) {
     //fazendo escolha de comidas
     if (escolha == "comidas" && !comidasIsTrue) {
-        lendas.style.backgroundColor = "#0c0d12"
-        lendas.style.color = "#f4f5f8"
-        comidas.style.backgroundColor = "#25262d"
+        comidas.style.backgroundColor = "#0c0d12"
         comidas.style.color = "#f4f5f8"
+        lendas.style.backgroundColor = "#25262d"
+        lendas.style.color = "#f4f5f8"
 
         lendasIsTrue = false
         comidasIsTrue = true
@@ -112,55 +112,80 @@ function mudarCard(escolha) {
          //verificando qual estado
          if (estado1IsTrue) {
             //fazendo por card2
-            card2.innerText  = "PRATO 02"
-            card2Title.innerText = "Pirarucu de casaca"
-            card2Subtitle.innerText = "Camadas de pirarucu, banana e farofa."
-            card2Text.innerText = "Prato de festa montado em camadas: pirarucu desfiado, banane-pacovã frita, purê e farofa de farinha d'água, gratinado até dourar."
+            card1.innerText  = "PRATO 01"
+            card1Title.innerText = "Mojica de pintado"
+            card1Subtitle.innerText = "Peixe com mandioca"
+            card1Text.innerText = "Prato feito com pintado, mandioca e temperos, muito tradicional em mato grosso."
 
             //fazendo pro card1
-            card1.innerText = "PRATO 01"
-            card1Title.innerText = "Tacacá"
-            card1Subtitle.innerText = "Tucupi quente, jambu, camarão seco e goma."
-            card1Text.innerText = "Servido fervendo na cuia, o tacacá combina o azedo do tucupi com o formigamento do jambu. Comida de fim de tarde vendidade em tacacázeiras nas esquinas"
+            card2.innerText = "PRATO 02"
+            card2Title.innerText = "Farofa de banana"
+            card2Subtitle.innerText = "Doce e salgada"
+            card2Text.innerText = "Farofa feita com banana e farinha de mandioca, comum na culinária mato-grossense."
          }
          else if (estado2IsTrue) {
             //fazendo pro card1 
-            card2Title.innerText = "Maniçoba"
-            card2Subtitle.innerText = "Folhas de mandioca cozidas, carne bovina, carne suíça e linguíça."
-            card2Text.innerText = "Conhecida como a “feijoada paraense”, a maniçoba é preparada com folhas de mandioca cozidas durante vários dias. O prato é muito consumido durante festas tradicionais e faz parte da cultura do estado do Pará."
+            card2.innerText = "PRATO 02"
+            card2Title.innerText = "Feijoada carioca"
+            card2Subtitle.innerText = "O prato tradicional"
+            card2Text.innerText = "Feijoada feita com feijão preto, carnes e acompanhamentos, muito popular no rio de janeiro."
 
             //fazendo pro card2
-            card1Title.innerText = "Vatapá paraense"
-            card1Subtitle.innerText = "Camarão, leite de coco, farinha, azeite de dendê e temperos."
-            card1Text.innerText = "Diferente do vatapá de outras regiões do Brasil, a versão paraense apresenta características próprias e costuma ser servida como acompanhamento em almoços e celebrações. É um dos pratos mais conhecidos da culinária do estado."
+            card1.innerText = "PRATO 01"
+            card1Title.innerText = "filé à oswaldo aranha"
+            card1Subtitle.innerText = "o prato carioca"
+            card1Text.innerText = "filé servido com alho, farofa, arroz e batatas fritas, criado e popularizado no rio de janeiro."
+         }
+         else if (estado3IsTrue) {
+            //fazendo pro card2
+            card1.innerText = "PRATO 01"
+            card1Title.innerText = "Virado à paulista"
+            card1Subtitle.innerText = "O prato tradicional"
+            card1Text.innerText = "Arroz, feijão, farinha de mandioca, couve e carne de porco."
+
+            //fazendo pro card2
+            card2.innerText = "PRATO 02"
+            card2Title.innerText = "Cuscuz paulista"
+            card2Subtitle.innerText = "O prato colorido"
+            card2Text.innerText = "Massa de milho com legumes, ovos e outros ingredientes, servido em fatias."
          }       
     }
     //fazedno escolha de lendas
     else if (escolha == "lendas" && !lendasIsTrue) {
-        comidas.style.backgroundColor = "#0c0d12"
-        comidas.style.color = "#f4f5f8"
-        lendas.style.backgroundColor = "#25262d"
+        lendas.style.backgroundColor = "#0c0d12"
         lendas.style.color = "#f4f5f8"
+        comidas.style.backgroundColor = "#25262d"
+        comidas.style.color = "#f4f5f8"
 
         lendasIsTrue = true
         comidasIsTrue = false
         
         //verificando o estado
         if (estado1IsTrue){
-
+            //fazedno por card1
+            card1.innerText = "LENDA 01"
+            card1Title.innerText = "Minhocão do pari"
+            card1Subtitle.innerText = "O monstro dos rios"
+            card1Text.innerText = "Uma criatura gigante que viveria nos rios e assustaria os pescadores."
+            
+            //fazendo por card2
+            card2.innerText = "LENDA 02"
+            card2Title.innerText = "Mãe de ouro"
+            card2Subtitle.innerText = "A luz misteriosa"
+            card2Text.innerText = "Uma luz dourada que apareceria nas montanhas, protegendo riquezas escondidas."
         }
         else if (estado2IsTrue) {
             //fazendo pro card2
             card2.innerText = "LENDA 02"
-            card2Title.innerText = "Cobra Grande"
-            card2Subtitle.innerText = "A serpente gigante que habita os rios da Amazônia."
-            card2Text.innerText = "Presente no imaginário paraense, a Cobra Grande é descrita como uma enorme serpente que vive nas profundezas dos rios. Muitas histórias afirmam que ela é responsável por fenômenos misteriosos e pelo desaparecimento de embarcações."
+            card2Title.innerText = "Lenda da pedra da gávea"
+            card2Subtitle.innerText = "O mistério da montanha."
+            card2Text.innerText = "A lenda diz que a pedra da gávea possui inscrições e segredos deixados por povos antigos."
 
             //fazendo pro card1
             card1.innerText = "LENDA 01"
-            card1Title.innerText = "Matinta perera"
-            card1Subtitle.innerText = "A misteriosa mulher que se transforma em um pássaro noturno."
-            card1Text.innerText = "A lenda conta a história de uma mulher que percorre as comunidades durante a noite emitindo um assobio característico. Segundo a tradição popular, ela visita as casas em busca de tabaco ou outros presentes, despertando medo e curiosidade."
+            card1Title.innerText = "Lenda do gigante adormecido"
+            card1Subtitle.innerText = "A montanha misteriosa"
+            card1Text.innerText = "a formação das montanhas do rio seria parecida com um gigante deitado, dando origem à lenda."
         }
         else if (estado3IsTrue) {
             //fazendo pro card2
@@ -193,28 +218,43 @@ function mudarCardEstado (escolha) {
          //verificando qual estado
          if (estado1IsTrue) {
             //fazendo por card2
-            card2.innerText  = "PRATO 02"
-            card2Title.innerText = "Pirarucu de casaca"
-            card2Subtitle.innerText = "Camadas de pirarucu, banana e farofa."
-            card2Text.innerText = "Prato de festa montado em camadas: pirarucu desfiado, banane-pacovã frita, purê e farofa de farinha d'água, gratinado até dourar."
+            card1.innerText  = "PRATO 01"
+            card1Title.innerText = "Mojica de pintado"
+            card1Subtitle.innerText = "Peixe com mandioca"
+            card1Text.innerText = "Prato feito com pintado, mandioca e temperos, muito tradicional em mato grosso."
 
             //fazendo pro card1
-            card1.innerText = "PRATO 01"
-            card1Title.innerText = "Tacacá"
-            card1Subtitle.innerText = "Tucupi quente, jambu, camarão seco e goma."
-            card1Text.innerText = "Servido fervendo na cuia, o tacacá combina o azedo do tucupi com o formigamento do jambu. Comida de fim de tarde vendidade em tacacázeiras nas esquinas"
+            card2.innerText = "PRATO 02"
+            card2Title.innerText = "Farofa de banana"
+            card2Subtitle.innerText = "Doce e salgada"
+            card2Text.innerText = "Farofa feita com banana e farinha de mandioca, comum na culinária mato-grossense."
          }
          else if (estado2IsTrue) {
             //fazendo pro card1 
-            card2Title.innerText = "Maniçoba"
-            card2Subtitle.innerText = "Folhas de mandioca cozidas, carne bovina, carne suíça e linguíça."
-            card2Text.innerText = "Conhecida como a “feijoada paraense”, a maniçoba é preparada com folhas de mandioca cozidas durante vários dias. O prato é muito consumido durante festas tradicionais e faz parte da cultura do estado do Pará."
+            card2.innerText = "PRATO 02"
+            card2Title.innerText = "Feijoada carioca"
+            card2Subtitle.innerText = "O prato tradicional"
+            card2Text.innerText = "Feijoada feita com feijão preto, carnes e acompanhamentos, muito popular no rio de janeiro."
 
             //fazendo pro card2
-            card1Title.innerText = "Vatapá paraense"
-            card1Subtitle.innerText = "Camarão, leite de coco, farinha, azeite de dendê e temperos."
-            card1Text.innerText = "Diferente do vatapá de outras regiões do Brasil, a versão paraense apresenta características próprias e costuma ser servida como acompanhamento em almoços e celebrações. É um dos pratos mais conhecidos da culinária do estado."
-         }       
+            card1.innerText = "PRATO 01"
+            card1Title.innerText = "filé à oswaldo aranha"
+            card1Subtitle.innerText = "o prato carioca"
+            card1Text.innerText = "filé servido com alho, farofa, arroz e batatas fritas, criado e popularizado no rio de janeiro."
+         }
+         else if (estado3IsTrue) {
+            //fazendo pro card2
+            card1.innerText = "PRATO 01"
+            card1Title.innerText = "Virado à paulista"
+            card1Subtitle.innerText = "O prato tradicional"
+            card1Text.innerText = "Arroz, feijão, farinha de mandioca, couve e carne de porco."
+
+            //fazendo pro card2
+            card2.innerText = "PRATO 02"
+            card2Title.innerText = "Cuscuz paulista"
+            card2Subtitle.innerText = "O prato colorido"
+            card2Text.innerText = "Massa de milho com legumes, ovos e outros ingredientes, servido em fatias."
+         }     
     }
     //fazedno escolha de lendas
     else if (escolha == "lendas") {
@@ -228,30 +268,43 @@ function mudarCardEstado (escolha) {
         
         //verificando o estado
         if (estado1IsTrue){
-            //fazendo pro card2
-            card2.innerText = "LENDA 02"
-            card2Title.innerText = "Vitória-régia"
-            card2Subtitle.innerText = "A moça que virou a flor da lua"
-            card2Text.innerText = "Naiá perseguiu o reflexo da lua nas águas e se afogou. Comovida, a lua a transformou na maior flor do rio, que abre á noite e perfuma o igarapé"
-
-            //fazendo pro card1
+            //fazedno por card1
             card1.innerText = "LENDA 01"
-            card1Title.innerText = "Boto-cor-de-rosa"
-            card1Subtitle.innerText = "O encantado que vira rapaz nas festas de junho."
-            card1Text.innerText = "Nas noites de festa, o boto assume forma humana, veste branco e usa chapéu para esconder o orifício na cabeça. Encanta moças ribeirinhas e desaparece antes do amanhecer, voltando ao rio."
+            card1Title.innerText = "Minhocão do pari"
+            card1Subtitle.innerText = "O monstro dos rios"
+            card1Text.innerText = "Uma criatura gigante que viveria nos rios e assustaria os pescadores."
+            
+            //fazendo por card2
+            card2.innerText = "LENDA 02"
+            card2Title.innerText = "Mãe de ouro"
+            card2Subtitle.innerText = "A luz misteriosa"
+            card2Text.innerText = "Uma luz dourada que apareceria nas montanhas, protegendo riquezas escondidas."
         }
         else if (estado2IsTrue) {
             //fazendo pro card2
             card2.innerText = "LENDA 02"
-            card2Title.innerText = "Cobra Grande"
-            card2Subtitle.innerText = "A serpente gigante que habita os rios da Amazônia."
-            card2Text.innerText = "Presente no imaginário paraense, a Cobra Grande é descrita como uma enorme serpente que vive nas profundezas dos rios. Muitas histórias afirmam que ela é responsável por fenômenos misteriosos e pelo desaparecimento de embarcações."
+            card2Title.innerText = "Lenda da pedra da gávea"
+            card2Subtitle.innerText = "O mistério da montanha."
+            card2Text.innerText = "A lenda diz que a pedra da gávea possui inscrições e segredos deixados por povos antigos."
 
             //fazendo pro card1
             card1.innerText = "LENDA 01"
-            card1Title.innerText = "Matinta perera"
-            card1Subtitle.innerText = "A misteriosa mulher que se transforma em um pássaro noturno."
-            card1Text.innerText = "A lenda conta a história de uma mulher que percorre as comunidades durante a noite emitindo um assobio característico. Segundo a tradição popular, ela visita as casas em busca de tabaco ou outros presentes, despertando medo e curiosidade."
+            card1Title.innerText = "Lenda do gigante adormecido"
+            card1Subtitle.innerText = "A montanha misteriosa"
+            card1Text.innerText = "a formação das montanhas do rio seria parecida com um gigante deitado, dando origem à lenda."
+        }
+        else if (estado3IsTrue) {
+            //fazendo pro card2
+            card2.innerText = "LENDA 02"
+            card2Title.innerText = "Mula sem cabeça"
+            card2Subtitle.innerText = "Fogo no lugar da cabeça, correndo o arraial."
+            card2Text.innerText = "Mulher amaldiçoada por desrespeitar o sagrado, transformada em mula que solta fogo pelo pescoço nas noites de quinta para sexta."
+            
+            //fazendo pro card1
+            card1.innerText = "LENDA 01"
+            card1Title.innerText = "Saci pererê"
+            card1Subtitle.innerText = "Uma perna, gorro vermelho e redemoinho."
+            card1Text.innerText = "Viaja em redemoinhos, embaraça crina de cavalo e esconde objetos. Aprisiona-se dentro de uma garrafa fechada com rolha de bento."
         }
     }
 }
