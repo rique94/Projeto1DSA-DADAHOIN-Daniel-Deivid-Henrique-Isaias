@@ -290,3 +290,7 @@ footer {
     color: var(--verde);
     font-size: 18pt;
 }
+#footer-creditos {
+    font-family: "InstumentSans";
+    font-size: 1rem;   
+}
